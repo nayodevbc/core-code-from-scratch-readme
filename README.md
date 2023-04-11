@@ -40,3 +40,5 @@ Formula pyramid
 4. Divide the product of that by 3 and the result of that is the volume of the pyramid.
 
 ##==========================================================##
+Numbers
+![image](https://user-images.githubusercontent.com/130413248/231237459-4f4f92d0-7257-42fa-a932-cd312c2d8171.png)
