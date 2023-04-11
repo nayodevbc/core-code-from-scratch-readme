@@ -42,3 +42,11 @@ Formula pyramid
 ##==========================================================##
 Numbers
 ![image](https://user-images.githubusercontent.com/130413248/231237459-4f4f92d0-7257-42fa-a932-cd312c2d8171.png)
+
+##==========================================================##
+How Old Are You
+
+Date birthDate;
+Date today;
+int age = today-birthDate;
+print age;
