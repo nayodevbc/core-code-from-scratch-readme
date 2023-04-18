@@ -62,3 +62,105 @@ Logic Problem
 Bob is telling the truth.
 
 ##==========================================================##
+
+WEEK 2
+##==========================================================##
+
+/myName/
+
+Algoritmo myName
+	Imprimir 	'Ignacio Balsells'
+FinAlgoritmo
+##==========================================================##
+
+/myName&Age/
+
+Algoritmo myName&age
+	Imprimir 	'Ignacio Balsells'
+	Imprimir 24
+FinAlgoritmo
+##==========================================================##
+
+Algorithm Game
+![image](https://user-images.githubusercontent.com/130413248/232678108-13760d7a-913d-45ac-a4e2-76031bddd145.png)
+
+##==========================================================##
+/Mod/
+
+Algoritmo mod
+	Leer num
+	mod<-num%2
+	Imprimir mod
+FinAlgoritmo
+##==========================================================##
+
+/Register form/
+
+Algoritmo form
+	Imprimir '====== USER FORM ======'
+	Imprimir 'First Name'
+	Leer firstName
+	Imprimir 'Last Name'
+	Leer lastName
+	Imprimir 'Age'
+	Leer age
+	Imprimir 'Email'
+	Leer email
+	Imprimir 'Adress'
+	Leer adress
+	Imprimir '====== USER DATA ======'
+	Imprimir 'Full name: ' + firstName + ' ' + lastName
+	Imprimir 'Age: ' + age
+	Imprimir 'Email: ' + email
+	Imprimir 'Adress: ' + adress
+	Imprimir '======================'
+FinAlgoritmo
+##==========================================================##
+
+/Truth tables/
+T & T = T ✅
+T & F = F ✅
+F & T = T ❌
+F & F = F ✅
+T | T = T ✅
+T | F = F ❌
+F | T = T ✅
+F | F = F ✅
+~T = T ❌
+~F = T ✅
+(T & F) | (~F) = T ✅
+(T | F ) & (F | F) = T ❌
+~((T | F ) & (F | F)) & F = T ❌
+~((T | F ) & (F | F)) & T = F ❌
+##==========================================================##
+
+/Boolean results/
+
+Algoritmo boolean
+  //Evalua si 5 es igual a 3 lo cual es falso
+	a <- 5 == 3
+  //Evalua que 4 no sea igual a 3 lo cual es verdadero
+	b <- 4 <> 3
+  //Evalua que 7 sea mayor a 7 lo cual es falso
+	c <- 7 > 7
+  //Evalua que 4 sea menor que 4 lo cual es falso
+	d <- 4 < 4
+  //Evalua que 100 sea menor o igual que 90 lo cual es falso
+	e <- 100 <= 90
+  //Evalua que 40 sea mayo o igual que 40 lo cual es verdadero
+	f <- 40 >= 40
+FinAlgoritmo
+##==========================================================##
+
+/Odd or Even/
+
+Algoritmo oddeven
+	Imprimir 'Ingrese numero a verificar'
+	Leer num
+	mod<-num%2
+	Si mod == 0 Entonces
+		Imprimir 'Numero: ' + ConvertirATexto(num) + ' es par.'
+	SiNo
+		Imprimir 'Numero: ' + ConvertirATexto(num) + ' es impar.'
+	Fin Si
+FinAlgoritmo
