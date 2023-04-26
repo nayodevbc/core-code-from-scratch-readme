@@ -164,3 +164,83 @@ Algoritmo oddeven
 		Imprimir 'Numero: ' + ConvertirATexto(num) + ' es impar.'
 	Fin Si
 FinAlgoritmo
+
+##==========================================================##
+WEEK 3 
+
+/SIMPLE CALCULATOR/
+
+Algoritmo Simple_Calculator
+	Escribir "Ingrese primer numero"
+	Leer num1
+	Escribir "Ingrese segundo numero"
+	Leer num2
+	res <- -999999999999
+	Escribir "Ingrese una operacion +,-,*,/"
+	Leer op
+	Si op = "+" Entonces
+		res <- num1 + num2
+	SiNo
+	Fin Si
+	Si op = "-" Entonces
+		res <- num1 - num2
+	SiNo
+	Fin Si
+	Si op = "*" Entonces
+		res <- num1 * num2
+	SiNo
+	Fin Si
+	Si op = "/" Entonces
+		res <- num1 / num2
+	SiNo
+		Escribir "?? La operacion no es valida"
+	Fin Si
+	Si res <> -999999999999 Entonces
+		Escribir res
+	SiNo
+	Fin Si
+FinAlgoritmo
+
+
+/Special number/
+
+Algoritmo specialNumber
+	Leer n
+	Si n == 100 Entonces
+		Imprimir 'This is a special number'
+	FinSi
+	Si n < 1000 & n % 10 = 0 & n <> 100 Entonces
+		Imprimir 'This number is almost special'
+	FinSi
+FinAlgoritmo
+
+/Simple Calculator Switch/
+
+Algoritmo Simple_Calculator_Switch
+	Escribir "Ingrese primer numero"
+	Leer num1
+	Escribir "Ingrese segundo numero"
+	Leer num2
+	Escribir "Ingrese una operacion +,-,*,/"
+	Leer op
+	Segun op Hacer
+		"+":
+			Escribir "Prosesando: " + num1 + " + " + num2
+			res <- ConvertirANumero(num1)+ConvertirANumero(num2)
+			Escribir ConvertirATexto(res)
+		"-":
+			Escribir "Prosesando: " + num1 + " - " + num2
+			res <- ConvertirANumero(num1)-ConvertirANumero(num2)
+			Escribir ConvertirATexto(res)
+		"*":
+			Escribir "Prosesando: " + num1 + " * " + num2
+			res <- ConvertirANumero(num1)*ConvertirANumero(num2)
+			Escribir ConvertirATexto(res)
+		"/":
+			Escribir "Prosesando: " + num1 + " / " + num2
+			res <- ConvertirANumero(num1)/ConvertirANumero(num2)
+			Escribir ConvertirATexto(res)
+		De Otro Modo:
+			Escribir "?? La operacion no es valida"
+	Fin Segun
+FinAlgoritmo
